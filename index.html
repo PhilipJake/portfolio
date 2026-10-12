@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0f">
+  <meta name="description" content="System32 is a web developer building interactive experiences, digital products, and playful interfaces.">
+  <title>System32.exe / Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="shadow-trail-canvas" aria-hidden="true"></canvas>
+  <div class="shadow-cursor" aria-hidden="true"><span class="shadow-cursor-ring"></span><span class="shadow-cursor-core"></span></div>
+  <progress class="page-progress" id="page-progress" max="100" value="0" aria-label="Page progress"></progress>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="System32.exe, home">
+      <span class="brand-icon" aria-hidden="true">S<span>_</span></span>
+      <span>SYSTEM32<span class="brand-extension">.EXE</span></span>
+    </a>
+    <div class="header-right">
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#missions" data-hotkey="F1"><span class="nav-key">F1</span> Missions</a>
+        <a href="#loadout" data-hotkey="F2"><span class="nav-key">F2</span> Loadout</a>
+        <a href="#contact" data-hotkey="F3"><span class="nav-key">F3</span> Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact"><span>INITIATE PROJECT</span><b aria-hidden="true">↗</b></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="arena-hero" aria-labelledby="hero-title">
+      <div class="arena-image" role="img" aria-label="A developer working at a laptop in a modern workspace"></div>
+      <div class="arena-grid" aria-hidden="true"></div>
+      <div class="hero-top mono"><span>SYS / ONLINE</span><span>CO-ORD 37.7749° N / 122.4194° W</span><span>BUILD 2026.10</span></div>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="online-indicator"></span> PLAYER 001 <span class="eyebrow-divider">/</span> WEB DEVELOPER</p>
+          <h1 id="hero-title">I MAKE<br>THE <span>INTERNET</span><br>PLAY BETTER<span class="hero-period">.</span></h1>
+          <div class="hero-intro-row">
+            <p class="hero-intro">Building fast, expressive digital experiences where design meets a little bit of game logic.</p>
+            <a class="primary-cta" href="#missions"><span>VIEW MISSIONS</span><b aria-hidden="true">↓</b></a>
+          </div>
+        </div>
+
+        <aside class="player-panel" aria-label="Developer profile">
+          <div class="panel-top mono"><span>PLAYER PROFILE</span><span>NO. 001</span></div>
+          <div class="avatar-frame" aria-hidden="true">
+            <div class="avatar-scan"></div>
+            <span class="avatar-mark">S</span>
+            <span class="avatar-crosshair">+</span>
+            <span class="avatar-coordinates mono">DEV / 26</span>
+          </div>
+          <h2>SYSTEM32<span class="profile-caret">_</span></h2>
+          <p class="player-role mono">CLASS: CREATIVE DEVELOPER</p>
+          <div class="player-divider"></div>
+          <div class="player-stat"><span class="mono">CURRENT MODE</span><strong><i></i> BUILDING</strong></div>
+          <div class="player-stat"><span class="mono">SPECIALTY</span><strong>WEB / INTERACTION</strong></div>
+          <div class="xp-label mono"><span>SKILL TREE</span><span>UNLOCKED</span></div>
+          <div class="xp-track"><span></span></div>
+        </aside>
+      </div>
+      <div class="hero-bottom mono"><span>SCROLL TO DEPLOY <b>↓</b></span><span>DESIGN / CODE / REPEAT</span></div>
+      <span class="hero-side-code mono" aria-hidden="true">PLAYER ONE / READY</span>
+    </section>
+
+    <section class="stats-strip" aria-label="Areas of practice">
+      <div><span class="strip-label mono">MAIN QUEST</span><strong>Digital experiences</strong></div>
+      <div><span class="strip-label mono">CURRENT CLASS</span><strong>Frontend developer</strong></div>
+      <div><span class="strip-label mono">FAVORITE POWER-UP</span><strong>Good interaction</strong></div>
+      <span class="strip-corner" aria-hidden="true">✳</span>
+    </section>
+
+    <section class="missions-section section-pad" id="missions" aria-labelledby="missions-title">
+      <div class="section-heading">
+        <div><p class="section-label mono"><span>01</span> / MISSION SELECT</p><h2 id="missions-title">PLAY THE<br><span>HIGHLIGHTS.</span></h2></div>
+        <p class="section-summary">A few worlds I’ve helped bring to life. Different challenges, different toolkits, one shared goal: make the web more interesting.</p>
+      </div>
+
+      <div class="mission-list">
+        <article class="mission mission-featured">
+          <div class="mission-index mono"><span>MISSION 01</span><span>MAIN STORY</span></div>
+          <div class="mission-image"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1800&q=85" alt="Programming code displayed on a developer's screen" loading="lazy"><span class="image-corner mono">AREA 01 / EDITOR OPEN</span></div>
+          <div class="mission-info">
+            <div><p class="mission-type mono">INTERACTIVE / FRONTEND</p><h3>Arcade<br>After Hours</h3></div>
+            <div class="mission-detail"><p>A playful digital space inspired by the places we used to spend our quarters. Built to explore, not just scroll.</p><div class="tech-tags"><span>REACT</span><span>CANVAS</span><span>MOTION</span></div><button class="mission-open" type="button" aria-haspopup="dialog">OPEN MISSION <span aria-hidden="true">↗</span></button></div>
+            <span class="mission-rank mono">S<br>RANK</span>
+          </div>
+        </article>
+
+        <article class="mission mission-compact">
+          <div class="mission-index mono"><span>MISSION 02</span><span>SIDE QUEST</span></div>
+          <div class="mission-image"><img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=85" alt="Bright blue flowing abstract digital forms" loading="lazy"><span class="image-corner mono">AREA 02 / UNSTABLE</span></div>
+          <div class="mission-info">
+            <div><p class="mission-type mono">WEBGL / EXPERIMENT</p><h3>Neon<br>Drift</h3></div>
+            <div class="mission-detail"><p>A small experiment in generative color and movement, tuned for the browser.</p><div class="tech-tags"><span>THREE.JS</span><span>GLSL</span></div><button class="mission-open" type="button" aria-haspopup="dialog">OPEN MISSION <span aria-hidden="true">↗</span></button></div>
+            <span class="mission-rank mono">A<br>RANK</span>
+          </div>
+        </article>
+
+        <article class="mission mission-compact">
+          <div class="mission-index mono"><span>MISSION 03</span><span>CO-OP</span></div>
+          <div class="mission-image"><img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1200&q=85" alt="A colorful design system of vivid graphic shapes" loading="lazy"><span class="image-corner mono">AREA 03 / INVENTORY</span></div>
+          <div class="mission-info">
+            <div><p class="mission-type mono">PRODUCT / UI SYSTEM</p><h3>Good<br>Form</h3></div>
+            <div class="mission-detail"><p>A flexible interface kit for a team that needed to ship faster without losing its personality.</p><div class="tech-tags"><span>TYPESCRIPT</span><span>DESIGN SYSTEMS</span></div><button class="mission-open" type="button" aria-haspopup="dialog">OPEN MISSION <span aria-hidden="true">↗</span></button></div>
+            <span class="mission-rank mono">A<br>RANK</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <dialog class="mission-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-frame">
+        <div class="dialog-top mono"><span data-dialog-index></span><button class="dialog-close" type="button" aria-label="Close mission details">×</button></div>
+        <div class="dialog-body">
+          <div class="dialog-image"><img data-dialog-image alt=""></div>
+          <div class="dialog-copy">
+            <p class="dialog-type mono" data-dialog-type></p>
+            <h2 id="dialog-title" data-dialog-title></h2>
+            <p class="dialog-description" data-dialog-description></p>
+            <div class="tech-tags dialog-tags" data-dialog-tags></div>
+            <a class="dialog-contact" href="#contact">DISCUSS A SIMILAR BUILD <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <section class="loadout-section" id="loadout" aria-labelledby="loadout-title">
+      <div class="loadout-art" role="img" aria-label="A close-up of a computer circuit board and electronic components"></div>
+      <div class="loadout-content section-pad">
+        <p class="section-label mono"><span>02</span> / CHARACTER LOADOUT</p>
+        <p class="eyebrow"><span class="online-indicator"></span> BUILT FOR THE NEXT LEVEL</p>
+        <h2 id="loadout-title">LANGUAGES<br>IN THE <span>LOADOUT.</span></h2>
+        <p class="loadout-copy">Different tools for different challenges, from the browser to scripting, server-side, and systems work.</p>
+        <div class="language-loadout">
+          <div class="language-heading mono"><span>LANGUAGE PROFILE</span><output class="language-current" aria-live="polite">8 LANGUAGES / READY</output></div>
+          <div class="language-grid" role="group" aria-label="Programming and web languages">
+            <button class="language-card" type="button" aria-pressed="false" data-language="C#" data-category="GENERAL-PURPOSE"><span class="language-number mono" aria-hidden="true">01</span><strong>C#</strong><span class="language-arrow" aria-hidden="true">↗</span></button>
+            <button class="language-card" type="button" aria-pressed="false" data-language="C++" data-category="SYSTEMS"><span class="language-number mono" aria-hidden="true">02</span><strong>C++</strong><span class="language-arrow" aria-hidden="true">↗</span></button>
+            <button class="language-card" type="button" aria-pressed="false" data-language="Lua" data-category="SCRIPTING"><span class="language-number mono" aria-hidden="true">03</span><strong>Lua</strong><span class="language-arrow" aria-hidden="true">↗</span></button>
+            <button class="language-card" type="button" aria-pressed="false" data-language="PHP" data-category="SERVER-SIDE"><span class="language-number mono" aria-hidden="true">04</span><strong>PHP</strong><span class="language-arrow" aria-hidden="true">↗</span></button>
+            <button class="language-card" type="button" aria-pressed="false" data-language="HTML" data-category="MARKUP"><span class="language-number mono" aria-hidden="true">05</span><strong>HTML</strong><span class="language-arrow" aria-hidden="true">↗</span></button>
+            <button class="language-card" type="button" aria-pressed="false" data-language="CSS" data-category="STYLESHEETS"><span class="language-number mono" aria-hidden="true">06</span><strong>CSS</strong><span class="language-arrow" aria-hidden="true">↗</span></button>
+            <button class="language-card" type="button" aria-pressed="false" data-language="JavaScript" data-category="WEB / SCRIPTING"><span class="language-number mono" aria-hidden="true">07</span><strong>JavaScript</strong><span class="language-arrow" aria-hidden="true">↗</span></button>
+            <button class="language-card" type="button" aria-pressed="false" data-language="Python" data-category="GENERAL-PURPOSE"><span class="language-number mono" aria-hidden="true">08</span><strong>Python</strong><span class="language-arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="loadout-stamp mono" aria-hidden="true">READY<br>PLAYER 1<br><span>✦</span></div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="contact-terminal mono"><span>INCOMING TRANSMISSION</span><span class="terminal-light"></span></div>
+      <p class="eyebrow"><span class="online-indicator"></span> YOUR NEXT QUEST STARTS HERE</p>
+      <div class="contact-row">
+        <h2 id="contact-title">LET’S<br><span>MAKE A</span><br>GOOD GAME.</h2>
+        <form class="message-form" id="message-form" action="/api/contact" method="post">
+          <div class="honeypot" aria-hidden="true"><label for="website">Website<input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+          <div class="message-fields">
+            <label class="message-field" for="sender-name"><span><i>01</i> CALLSIGN</span><input id="sender-name" name="name" type="text" maxlength="120" autocomplete="name" placeholder="Your name" required></label>
+            <label class="message-field" for="sender-email"><span><i>02</i> REPLY ADDRESS</span><input id="sender-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+          </div>
+          <label class="message-field message-body" for="sender-message"><span><i>03</i> MESSAGE</span><textarea id="sender-message" name="message" rows="5" maxlength="3000" placeholder="What are you building?" required></textarea></label>
+          <fieldset class="delivery-method">
+            <legend><i>04</i> SEND WITH</legend>
+            <div class="delivery-options" role="group" aria-label="Choose how to send your message">
+              <label class="delivery-option"><input type="radio" name="delivery" value="backend" checked><span>DIRECT SEND</span></label>
+              <label class="delivery-option"><input type="radio" name="delivery" value="gmail" data-contact-method disabled><span>GMAIL</span></label>
+              <label class="delivery-option"><input type="radio" name="delivery" value="email-app" data-contact-method disabled><span>EMAIL APP</span></label>
+            </div>
+          </fieldset>
+          <div class="message-form-footer">
+            <p class="message-status mono" id="message-status" aria-live="polite">MESSAGE CHANNEL READY</p>
+            <button class="contact-cta" type="submit"><span>SEND MESSAGE</span><b aria-hidden="true">↗</b></button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-bottom mono"><span>MESSAGE CHANNEL / SMTP OR EMAIL APP</span><span>SELECT A DELIVERY METHOD</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer mono">
+    <a class="brand" href="#top"><span class="brand-icon" aria-hidden="true">S<span>_</span></span><span>SYSTEM32<span class="brand-extension">.EXE</span></span></a>
+    <span>© <span id="year"></span> / ALL SYSTEMS NOMINAL</span>
+    <a href="#top">BACK TO TOP ↑</a>
+  </footer>
+</body>
+</html>
